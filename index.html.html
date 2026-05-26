@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eid Mubarak My Love 🌙</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1a0f2e, #2d1b4a);
+      color: #fff;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    .moon { 
+      position: absolute; 
+      top: 50px; 
+      right: 50px; 
+      font-size: 80px; 
+      animation: glow 4s infinite alternate; 
+    }
+    @keyframes glow { 
+      from { text-shadow: 0 0 20px #fff; } 
+      to { text-shadow: 0 0 60px #a78bfa; } 
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin: 30px 0;
+      background: linear-gradient(90deg, #f8c8ff, #c4a1ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .heart { 
+      font-size: 40px; 
+      animation: beat 1.2s infinite; 
+    }
+    @keyframes beat { 
+      0%,100% { transform: scale(1); } 
+      50% { transform: scale(1.3); } 
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 40px 30px;
+      margin: 30px auto;
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    button {
+      background: #a855f7;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      margin: 20px 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    button:hover {
+      background: #c084fc;
+      transform: translateY(-5px);
+    }
+
+    .message {
+      display: none;
+      margin-top: 30px;
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="moon">🌙</div>
+  
+  <div class="container">
+    <h1>Eid Mubarak Aylin 🌙</h1>
+    <p style="font-size:1.4rem; margin-bottom:30px;">No matter the distance, our love grows deeper ❤️</p>
+
+    <div class="card">
+      <p style="font-size:2rem;" class="heart">❤️</p>
+      <h2>Hellloowwwww My Bunnyyyyy ❤️</h2>
+      <br>
+      <p style="font-size:1.3rem; line-height:1.8;">
+        On this Eid, you are the first person on my mind. 
+        Even though we are far apart, my heart is always with you.
+      </p>
+      <br>
+      <button onclick="showMessage(1)">Read My First Message</button>
+      <button onclick="showMessage(2)">Another Sweet Message</button>
+      <button onclick="showMessage(3)">One More</button>
+      <button onclick="showMessage(4)">Virtual Eidi for You 💝</button>
+    </div>
+
+    <div id="msg1" class="message card">
+      You are my prayer, my strength, and my whole world. Again EID MUBARAK chotiiiii siiii varresshaaaaa. 💕
+    </div>
+
+    <div id="msg2" class="message card">
+      Distance can never separate us, Q k ma apka hi hu or rhu ga hamesha or kisi ka nh. U r my everything ,, Love you so muchhh 🖤♾️.. 
+    </div>
+
+    <div id="msg3" class="message card">
+        orrrrrr nh dant ta yr ma apko , nh krta gussa ap p ataa hi nh to krna kya h.
+        khyaal rkha kare apna or jonse bi surakh krne hote hn zraa khyaal se kiya kare.. M always urs.
+        Biryani hi khila dennnn ..
+    </div>
+
+    <div id="msg4" class="message card">
+      <h2>Virtual Eidi 💖</h2>
+      <p style="font-size:4rem; margin:20px 0;">🌙Ice cream khilao ga jb moqa milaaaa❤️</p>
+      <p>This is not just an Eidi, it's my heart given to you.
+        Dil dediyaa apkooooo...
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showMessage(n) {
+      document.getElementById('msg1').style.display = 'none';
+      document.getElementById('msg2').style.display = 'none';
+      document.getElementById('msg3').style.display = 'none';
+      
+      document.getElementById('msg' + n).style.display = 'block';
+    }
+
+    // Welcome alert
+    setTimeout(() => {
+      alert("🌙 Eid Mubarak! My love for you is endless ❤️");
+    }, 1500);
+  </script>
+</body>
+</html>
